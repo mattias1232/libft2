@@ -1,0 +1,48 @@
+ft_calloc	: 1.OK 2.MOK 3.KO 4.OK 5.OK 6.OK 7.OK 8.OK 9.KO 10.OK 11.OK ==89098== Argument 'size' of function malloc has a fishy (possibly negative) value: -15
+==89098==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89098==    by 0x404C4D: ft_calloc (in /nfs/homes/mtozzi-b/Desktop/libft/libftTester/a.out)
+==89098==    by 0x404B4E: main (ft_calloc_test.cpp:43)
+==89098== 
+12.OK ==89098== Argument 'size' of function malloc has a fishy (possibly negative) value: -15
+==89098==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89098==    by 0x404C4D: ft_calloc (in /nfs/homes/mtozzi-b/Desktop/libft/libftTester/a.out)
+==89098==    by 0x404B76: main (ft_calloc_test.cpp:44)
+==89098== 
+13.OK 
+==89098== 1 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==89098==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89098==    by 0x404C4D: ft_calloc (in /nfs/homes/mtozzi-b/Desktop/libft/libftTester/a.out)
+==89098==    by 0x40498D: main (ft_calloc_test.cpp:24)
+==89098== 
+==89098== 25 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==89098==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89098==    by 0x404C4D: ft_calloc (in /nfs/homes/mtozzi-b/Desktop/libft/libftTester/a.out)
+==89098==    by 0x404AAA: main (ft_calloc_test.cpp:38)
+==89098== 
+ft_strdup	: 1.OK 2.MOK 3.OK 4.MOK 
+ft_substr	: 1.OK 2.MOK 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK ==89132== Invalid read of size 1
+==89132==    at 0x404DD1: ft_substr (in /nfs/homes/mtozzi-b/Desktop/libft/libftTester/a.out)
+==89132==    by 0x404AF8: main (ft_substr_test.cpp:37)
+==89132==  Address 0x4de526b is 0 bytes after a block of size 11 alloc'd
+==89132==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89132==    by 0x4C4D58E: strdup (strdup.c:42)
+==89132==    by 0x404ADB: main (ft_substr_test.cpp:36)
+==89132== 
+9.OK 10.MKO 11.OK 12.MOK 13.OK 14.MOK 15.OK 16.MOK 
+ft_strjoin	: 1.OK 2.MOK 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK 
+ft_strtrim	: 1.OK 2.MOK 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK 9.OK 10.MOK 11.OK 12.MOK 13.OK 14.MOK 15.OK 16.MOK 
+ft_split	: 1.MOK 2.OK 3.MKO 4.OK 5.MKO 6.OK 7.OK 8.OK 9.OK 10.OK 11.MOK 12.OK 13.OK 14.MOK 15.OK 16.MOK 17.OK 18.OK 19.MOK 20.OK 21.OK 22.MOK 23.OK 24.OK 25.MOK 26.OK 27.MKO 28.OK 29.MOK 30.OK 31.MKO 32.OK 33.MKO 34.OK 35.MKO 36.OK 37.MKO 38.OK 39.MKO 40.OK 41.MKO 42.OK 
+ft_itoa		: 1.OK 2.MOK 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK 9.OK 10.MOK 11.OK 12.MOK 
+ft_strmapi	: 1.OK 2.MOK 3.OK 4.MOK 
+ft_putchar_fd	: 1.OK 
+ft_putstr_fd	: 1.OK 
+ft_putendl_fd	: 1.OK 
+ft_putnbr_fd	: 1.OK 2.OK 3.OK 4.OK 5.OK 
+/usr/bin/ld: /tmp/ft_striteri_test-50ec3c.o: in function `main':
+/nfs/homes/mtozzi-b/Desktop/libft/libftTester/tests/ft_striteri_test.cpp:27: undefined reference to `ft_striteri'
+/usr/bin/ld: /nfs/homes/mtozzi-b/Desktop/libft/libftTester/tests/ft_striteri_test.cpp:33: undefined reference to `ft_striteri'
+/usr/bin/ld: /nfs/homes/mtozzi-b/Desktop/libft/libftTester/tests/ft_striteri_test.cpp:39: undefined reference to `ft_striteri'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:24: striteri] Error 1
+make: Leaving directory '/nfs/homes/mtozzi-b/Desktop/libft/libftTester'
+
